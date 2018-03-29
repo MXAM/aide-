@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mxaide.jl">
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".start"  
+			android:label="@string/app_name"
+			>
+         
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+      <activity
+            android:name=".webview"
+		  android:label="图文教学"	
+/>
+		 	<activity
+            android:name=".MainActivity"
+		    android:label="@string/app_name"/>
+		<activity
+            android:name=".about"
+			android:label="关于"	/>  
+		<activity
+            android:name=".list"
+			android:label="教学列表"	
+			/>
+		<activity
+            android:name=".video"
+			android:label="视频教程"	/>
+		
+    </application>
+
+</manifest>
